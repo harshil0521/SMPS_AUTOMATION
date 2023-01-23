@@ -1,5 +1,5 @@
 from selenium import webdriver
-from log_in import log_in
+from log_in_screen import fn_log_in
 import time
 from truck_arrival import truck_arrival
 from dock_collection import dock_collection
@@ -11,7 +11,7 @@ driver.maximize_window()
 # driver.get('http://localhost:4200/#/login')
 driver.get('http://proc.smartmps.in/#/login')
 
-log_in(driver)
+fn_log_in(driver)
 # truck_arrival(driver)
 # dock_collection(driver)
 

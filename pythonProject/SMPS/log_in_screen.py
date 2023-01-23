@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 import time
 
 
-def log_in(driver):
+def fn_log_in(driver):
     """Number & Password"""
     phone_number = driver.find_element(By.NAME, "phone_number")
     phone_number.clear()
@@ -35,6 +35,7 @@ def log_in(driver):
     dock_selection = driver.find_element(By.ID, "mat-option-2")
     dock_selection.click()
 
+    # date_selection = driver.find_element() TODO calender script
     shift = driver.find_element(By.NAME, "shift")
     shift.click()
 

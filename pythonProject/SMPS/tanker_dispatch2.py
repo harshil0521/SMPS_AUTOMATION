@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from SMPS import XLUtility
-from log_in import log_in
+from log_in_screen import log_in
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
