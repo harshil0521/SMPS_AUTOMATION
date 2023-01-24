@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
-def truck_arrival(driver):
+def fn_truck_arrival(driver):
     transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
     transaction.click()
 
