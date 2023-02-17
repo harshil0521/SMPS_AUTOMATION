@@ -1,11 +1,9 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.alert import Alert
 from selenium.common.exceptions import NoSuchElementException
 import time
 
 
-def dock_collection(driver):
+def fn_dock_collection(driver):
     transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
     transaction.click()
 
@@ -18,7 +16,11 @@ def dock_collection(driver):
     route_dropdown = driver.find_element(By.NAME, "routeSelect")
     route_dropdown.click()
 
-    route_select = driver.find_element(By.XPATH, "//*[contains(text(), ' [006] DEMO ROUTE ')]")
+    routes = driver.find_elements(By.XPATH, "/html/body/div[3]/div[4]//mat-option")
+    print(len(routes))
+
+    route = routes[1]
+    route_select = driver.find_element(By.XPATH, "//*[contains(text(), '"+route+"')]")
     route_select.click()
 
     grade_dropdown = driver.find_element(By.NAME, "grade")
@@ -31,6 +33,7 @@ def dock_collection(driver):
 
     continues = driver.find_element(By.XPATH, "//*[contains(text(), ' Continue ')]")
     continues.click()
+
 
     codes = ['1010', '12125']
 

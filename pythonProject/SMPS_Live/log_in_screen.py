@@ -10,21 +10,13 @@ def fn_log_in(driver):
     password = driver.find_element(By.NAME, "password")
     password.clear()
 
-    """Local admin"""
-    # phone_number.send_keys("7777914868")
-    # password.send_keys("admin123456")
-
-    """Local BMC Collection"""
-    # phone_number.send_keys("9925044205")
-    # password.send_keys("admin123456")
-
     """Live admin"""
     # phone_number.send_keys("8141000000")
     # password.send_keys("123")
 
     """Live BMC Collection"""
     phone_number.send_keys("8160095599")
-    password.send_keys("1234")
+    password.send_keys("123")
 
     password.send_keys(Keys.RETURN)
 
@@ -36,6 +28,10 @@ def fn_log_in(driver):
     dock_selection.click()
 
     # date_selection = driver.find_element() TODO calender script
+    # date_calender = driver.find_element(By.XPATH, "//button[@aria-label='Open calendar']")
+    # date_calender.click()
+    # time.sleep(3)
+
     shift = driver.find_element(By.NAME, "shift")
     shift.click()
 
