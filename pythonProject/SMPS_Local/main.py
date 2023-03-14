@@ -15,9 +15,9 @@ driver.maximize_window()
 # driver.get('http://localhost:4200/#/login')
 driver.get('http://proc.smartmps.in/#/login')
 
-fn_log_in(driver)
+# fn_log_in(driver)
 # fn_truck_arrival(driver)
-dock_collection(driver)
+# dock_collection(driver)
 
 time.sleep(5)
 driver.quit()
