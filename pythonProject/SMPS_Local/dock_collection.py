@@ -2,6 +2,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.alert import Alert
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from truck_arrival_screen import fn_truck_arrival
 import time
 
 
@@ -14,11 +17,15 @@ def dock_collection(driver):
 
     dock = driver.find_element(By.XPATH, "//*[contains(text(), 'Dock')]")
     dock.click()
+    time.sleep(1)
+
+    # my_wait = WebDriverWait(driver, 10, poll_frequency=1)
+    # route_dropdown = my_wait.until(EC.presence_of_element_located((By.NAME, "routeSelect")))
 
     route_dropdown = driver.find_element(By.NAME, "routeSelect")
     route_dropdown.click()
 
-    route_select = driver.find_element(By.XPATH, "//*[contains(text(), ' [006] DEMO ROUTE ')]")
+    route_select = driver.find_element(By.XPATH, "//*[contains(text(), '[1111] SOLA ROUTE')]")
     route_select.click()
 
     grade_dropdown = driver.find_element(By.NAME, "grade")
@@ -32,10 +39,10 @@ def dock_collection(driver):
     continues = driver.find_element(By.XPATH, "//*[contains(text(), ' Continue ')]")
     continues.click()
 
-    codes = ['1010', '12125']
+    codes = ['101', '102', '103']
 
     for code in codes:
-        time.sleep(0.25)
+        time.sleep(0.5)
         mpp_code = driver.find_element(By.NAME, "Code")
         mpp_code.clear()
         mpp_code.send_keys(code)
@@ -53,7 +60,7 @@ def dock_collection(driver):
 
         quantity = driver.find_element(By.NAME, "Weight")
         quantity.clear()
-        quantity.send_keys('15')
+        quantity.send_keys('18.5')
 
         add_qty = driver.find_element(By.XPATH, "//*[contains(text(), 'Add')]")
         add_qty.click()

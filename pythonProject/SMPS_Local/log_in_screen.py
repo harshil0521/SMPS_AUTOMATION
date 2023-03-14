@@ -10,39 +10,45 @@ def fn_log_in(driver):
     password = driver.find_element(By.NAME, "password")
     password.clear()
 
+    user = ''
     """Local admin"""
     # phone_number.send_keys("7777914868")
     # password.send_keys("admin123456")
 
     """Local BMC Collection"""
-    # phone_number.send_keys("9925044205")
-    # password.send_keys("admin123456")
+    phone_number.send_keys("9925044205")
+    password.send_keys("admin123456")
+    user = 'bmc_collection'
 
     """Live admin"""
     # phone_number.send_keys("8141000000")
     # password.send_keys("123")
 
     """Live BMC Collection"""
-    phone_number.send_keys("8160095599")
-    password.send_keys("1234")
+    # phone_number.send_keys("8141000001")
+    # password.send_keys("123")
+    # user = 'bmc_collection'
 
     password.send_keys(Keys.RETURN)
 
-    """Dock & Shift selection"""
-    dock_dropdown = driver.find_element(By.NAME, "dock")
-    dock_dropdown.click()
+    if user == 'bmc_collection':
 
-    dock_selection = driver.find_element(By.ID, "mat-option-2")
-    dock_selection.click()
+        """Dock & Shift selection"""
+        dock_dropdown = driver.find_element(By.NAME, "dock")
+        dock_dropdown.click()
 
-    # date_selection = driver.find_element() TODO calender script
-    shift = driver.find_element(By.NAME, "shift")
-    shift.click()
+        dock_selection = driver.find_element(By.ID, "mat-option-2")
+        dock_selection.click()
 
-    selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Morning')]")
-#   selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Evening')]")
-    selected_shift.click()
+        # date_selection = driver.find_element() TODO calender script
 
-    submit = driver.find_element(By.XPATH, "//*[contains(text(), 'Submit')]")
-    submit.click()
-    time.sleep(0.5)
+        shift = driver.find_element(By.NAME, "shift")
+        shift.click()
+
+        selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Morning')]")
+    #   selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Evening')]")
+        selected_shift.click()
+
+        submit = driver.find_element(By.XPATH, "//*[contains(text(), 'Submit')]")
+        submit.click()
+        time.sleep(0.5)

@@ -2,20 +2,31 @@ from selenium.webdriver.common.by import By
 
 
 def fn_truck_arrival(driver):
+
     transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
     transaction.click()
 
     auto_collection = driver.find_element(By.XPATH, "//*[contains(text(), 'Auto Collection')]")
     auto_collection.click()
 
-    truck = driver.find_element(By.XPATH, "//*[@id='mat-menu-panel-10']/div/button[1]")
+    truck = driver.find_element(By.XPATH, "//button[normalize-space()='Truck Arrival']")
     truck.click()
 
-    route_dropdown = driver.find_element(By.ID, "mat-select-value-5")
-    route_dropdown.click()
+    route_drp = driver.find_element(By.NAME, "route")
+    route_drp.click()
 
-    route_selection = driver.find_element(By.XPATH, "//*[contains(text(), ' [006] DEMO ROUTE ')]")
-    route_selection.click()
+    routes = driver.find_elements(By.XPATH, "/html/body/div/div/div/div//mat-option")
+    print(len(routes))
 
-    submit = driver.find_element(By.XPATH, "//*[contains(text(), ' Submit ')]")
-    submit.click()
+    for i in range(len(routes)):
+        print("Route [", i+1, "] = ", routes[i].text)
+
+    for i in range(len(routes)):
+        route_selection = driver.find_element(By.XPATH, "//*[contains(text(), '"+routes[i].text+"')]")
+        route_selection.click()
+
+        submit = driver.find_element(By.XPATH, "//*[contains(text(), ' Submit ')]")
+        submit.click()
+
+        route_dropdown = driver.find_element(By.NAME, "route")
+        route_dropdown.click()

@@ -1,16 +1,18 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from SMPS import XLUtility
-from log_in_screen import log_in
+from pythonProject.SMPS_Local import XLUtility
+from selenium.webdriver.chrome.service import Service
+from log_in_screen import fn_log_in
 
-driver = webdriver.Chrome()
+serv_obj = Service("D:/drivers/chromedriver_win32/chromedriver.exe")
+driver = webdriver.Chrome(service=serv_obj)
 driver.implicitly_wait(10)
 
-driver.get('http://localhost:4200/#/login')
+driver.get('http://dev.rmrd.in/#/login')
 driver.maximize_window()
 
-log_in(driver)
+fn_log_in(driver)
 
 driver.find_element(By.XPATH, "//span[normalize-space()='Transaction']").click()
 driver.find_element(By.XPATH, "//button[normalize-space()='Tanker BMC Movement']").click()
