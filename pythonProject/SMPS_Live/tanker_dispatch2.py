@@ -1,8 +1,8 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from SMPS import XLUtility
-from log_in_screen import log_in
+from pythonProject.SMPS_Live import XLUtility
+from log_in_screen import fn_log_in
 
 driver = webdriver.Chrome()
 driver.implicitly_wait(10)
@@ -10,7 +10,7 @@ driver.implicitly_wait(10)
 driver.get('http://localhost:4200/#/login')
 driver.maximize_window()
 
-log_in(driver)
+fn_log_in(driver)
 
 driver.find_element(By.XPATH, "//span[normalize-space()='Transaction']").click()
 driver.find_element(By.XPATH, "//button[normalize-space()='Tanker BMC Movement']").click()
