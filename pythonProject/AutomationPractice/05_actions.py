@@ -15,7 +15,7 @@ driver = webdriver.Chrome()
 "----------------------------------------------------------------------"
 # Keywords/variables stored
     # 1. .get (Opening the application URL)
-# driver.get("https://www.nopcommerce.com/en/register?returnUrl=%2Fen%2Fdemo")
+    # driver.get("https://www.nopcommerce.com/en/register?returnUrl=%2Fen%2Fdemo")
 
     # 2. title (To capture the title of current webpage)
     # print(driver.title)

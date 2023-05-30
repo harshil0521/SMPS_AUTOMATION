@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from pythonProject.SMPS_Live import XLUtility
+import XLUtility
 import time
 
 
@@ -16,7 +16,7 @@ def fn_member_collection(driver):
     member_collection_data.click()
     # time.sleep(0.5)
 
-    file = "data/member_collection_data.xlsx"
+    file = "C://AUTOMATION/SMPS_AUTOMATION/pythonProject/SMPS_Live/data/member_collection_data.xlsx"
     rows = XLUtility.get_row_count(file, "data")
     print(rows)
     time.sleep(2)
