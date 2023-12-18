@@ -1,8 +1,0 @@
-Username	Password	Information	Automation
-standard_user	secret_sauce	Correct	
-new_user	secret_sauce	Incorrect	
-locked_out_user	secret_sauce	Correct	
-problem_user	admin123	Incorrect	
-demo_user	secret_sauce	Incorrect	
-correct_user	admin111	Incorrect	
-performance_glitch_user	secret_sauce	Correct	

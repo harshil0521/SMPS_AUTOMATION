@@ -14,7 +14,7 @@ sheet = workbook["data"]
 print("Total rows:", sheet.max_row)
 print("Total Columns:", sheet.max_column)
 
-rows = XLUtility.getRowCount(file, "data")
+rows = XLUtility.getRowCount(file, "data") 
 
 for r in range(2, rows+1):
     """Reading credentials"""
@@ -39,3 +39,4 @@ for r in range(2, rows+1):
     else:
         driver.refresh()
         XLUtility.writeData(file, "data", r, 4, "Incorrect")
+ 

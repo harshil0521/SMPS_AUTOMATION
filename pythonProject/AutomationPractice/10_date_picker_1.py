@@ -39,4 +39,3 @@ for ele in dates:
 
 # time.sleep(2)
 # driver.quit()
-

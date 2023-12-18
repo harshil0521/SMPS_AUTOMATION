@@ -13,8 +13,8 @@ driver.maximize_window()
 driver.get('http://proc.smartmps.in/#/login')
 # driver.get('http://uat.smartmps.in/#/login')
 
-fn_log_in(driver)
-fn_member_collection(driver)
+# fn_log_in(driver)
+# fn_member_collection(driver)
 
 # fn_truck_arrival(driver)
 # fn_dock_collection(driver)
