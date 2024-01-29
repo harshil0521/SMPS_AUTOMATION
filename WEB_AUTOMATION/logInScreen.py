@@ -13,23 +13,14 @@ def fnLogIn(driver):
 
     user = ''
 
-    """Local admin - Indu Barot"""
-    # phone_number.send_keys("7777914868")
-    # password.send_keys("admin123456")
-
-    """Local BMC Collection - Parth Barot"""
-    # phone_number.send_keys("9925044205")
-    # password.send_keys("admin123456")
-    # user = 'bmc_collection'
-
-    """Live admin - Harshil Admin"""
-    # phone_number.send_keys("8141000000")
-    # password.send_keys("123")
+    """--- Live admin - Harshil Admin"""
+    phone_number.send_keys("8141000000")
+    password.send_keys("123")
 
     """Live BMC Collection - Sola BMC"""
-    phone_number.send_keys("8141000001")
-    password.send_keys("123")
-    user = 'bmc_collection'
+    # phone_number.send_keys("8141000001")
+    # password.send_keys("123")
+    # user = 'bmc_collection'
 
     password.send_keys(Keys.RETURN)
 
@@ -43,6 +34,7 @@ def fnLogIn(driver):
         dock_selection.click()
 
         # date_selection = driver.find_element() TODO calender script
+        # time.sleep(5)
 
         shift = driver.find_element(By.NAME, "shift")
         shift.click()
