@@ -53,4 +53,4 @@ def fnLogIn(driver):
 
         submit = driver.find_element(By.XPATH, "//*[contains(text(), 'Submit')]")
         submit.click()
-        time.sleep(0.5)
+        time.sleep(1)

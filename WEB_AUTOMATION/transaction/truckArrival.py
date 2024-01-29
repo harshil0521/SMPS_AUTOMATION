@@ -18,8 +18,8 @@ def fnTruckArrival(driver):
     routes = driver.find_elements(By.XPATH, "/html/body/div/div/div/div//mat-option")
     print(len(routes))
 
-    for i in range(len(routes)):
-        print("Route [", i+1, "] = ", routes[i].text) 
+    # for i in range(len(routes)):
+    #     print("Route [", i+1, "] = ", routes[i].text)
 
     for i in range(len(routes)):
         route_selection = driver.find_element(By.XPATH, "//*[contains(text(), '"+routes[i].text+"')]")

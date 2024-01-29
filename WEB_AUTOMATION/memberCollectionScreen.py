@@ -16,8 +16,9 @@ def fn_member_collection(driver):
     member_collection_data.click()
     time.sleep(0.5)
 
-    file = "C:/Samudra Project/AUTOMATION/SMPS_AUTOMATION/SMPS/dataSheet/memberCollectionData.xlsx"
+    file = "C:\Samudra Project\AUTOMATION\SMPS_AUTOMATION\SMPS\dataSheet\memberCollectionData.xlsx"
     rows = XLUtility.getRowCount(file, "data")
+    # print(rows)
     time.sleep(2)
     driver.exit()
 

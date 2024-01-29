@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.service import Service
 import time
 
-
 # serv_obj = Service("C:\Users\Prerna Singh\Downloads\chromedriver_win32\chromedriver.exe")
 # driver = webdriver.Chrome(service = serv_obj)
 driver = webdriver.Chrome()

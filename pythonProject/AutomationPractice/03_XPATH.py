@@ -81,4 +81,3 @@ driver.find_element(By.XPATH, "//tag name[@attribute= 'value of attribute' and @
 
 """ text() """
 driver.find_element(By.XPATH, "tagname[text()='value of need']")
-
