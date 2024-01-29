@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from WEB_AUTOMATION  import XLUtility
+from WEB_AUTOMATION import XLUtility
 import time
 
 
@@ -11,13 +11,13 @@ def fnMemberCollection(driver):
     mppCollection = driver.find_element(By.XPATH, "//*[contains(text(), 'MPP Collection')]")
     mppCollection.click()
 
-    memberCollection  = driver.find_element(By.XPATH, "//*[contains(text(), 'Member Collection')]")
+    memberCollection = driver.find_element(By.XPATH, "//*[contains(text(), 'Member Collection')]")
     memberCollection.click()
     time.sleep(1)
 
-    file = "C:/Samudra Project/AUTOMATION/SMPS_AUTOMATION/SMPS/dataSheet/memberCollectionData.xlsx"
+    file = "C:/Samudra Project/AUTOMATION/SMPS_AUTOMATION/WEB_AUTOMATION/dataSheet/memberCollectionData.xlsx"
     rows = XLUtility.getRowCount(file, "data")
-    print(rows)
+    print("Number of Collection =", rows-1)
 
     for r in range(2, rows+1):
 
@@ -26,11 +26,11 @@ def fnMemberCollection(driver):
         """Reading data"""
         routeValue = XLUtility.readData(file, "data", r, 1)
         mppValue = XLUtility.readData(file, "data", r, 2)
-        dateValue = XLUtility.readData(file, "data", r, 3)
-        newDateValue = dateValue.split('-')
-        dateValue2 = newDateValue[0]
-        monthValue = newDateValue[1]
-        yearValue = newDateValue[2]
+        date = XLUtility.readData(file, "data", r, 3)
+        newDate = date.split('-')
+        dateValue = newDate[0]
+        monthValue = newDate[1]
+        yearValue = newDate[2]
         shiftValue = XLUtility.readData(file, "data", r, 4)
         memberValue = XLUtility.readData(file, "data", r, 5)
         typeValue = XLUtility.readData(file, "data", r, 6)
@@ -50,40 +50,27 @@ def fnMemberCollection(driver):
         mpp = driver.find_element(By.XPATH, "//*[contains(text(), '"+mppValue+"')]")
         mpp.click()
 
-        # date = driver.find_element(By.XPATH, "//button[@aria-label='Open calendar']")
-        # date.click()
-        #
-        # # datePicker = driver.find_element(By.XPATH, "//button[@aria-label='21 July 2023']")
-        # # datePicker.click()
-        #
-        #
+        date = driver.find_element(By.XPATH, "//button[@aria-label='Open calendar']")
+        date.click()
+
         # datePicker = driver.find_element(By.XPATH, "//button[@aria-label='Choose month and year']")
         # datePicker.click()
-        #
+
         # yearSelection = driver.find_element(By.XPATH, "//*[contains(text(), '"+yearValue+"')]")
         # yearSelection.click()
-        #
+
         # monthSelection = driver.find_element(By.XPATH, "//*[contains(text(), '"+monthValue+"')]")
         # monthSelection.click()
-        # time.sleep(1)
-        #
-        # # print("Date:", dateValue2)
-        # # dateSelect = driver.find_element(By.XPATH, "//*[contains(text(), ' "+dateValue2+" ')]")
-        # # dateSelect.click()
-        #
-        # # dateSelection = driver.find_element(By.XPATH, "//*[contains(text(), '21')]")
-        # # dateSelection.click()
-        # # print(dateValue2)
-        #
-        # dateSelection = driver.find_element(By.XPATH, "//button[@aria-label='"+dateValue+"']")
-        # dateSelection.click()
+
+        dateSelect = driver.find_element(By.XPATH, "//div[normalize-space()='"+dateValue+"']")
+        dateSelect.click()
 
         shift = driver.find_element(By.NAME, "shift")
         shift.click()
 
-        # shiftSelection = driver.find_element(By.XPATH, "//*[contains(text(), '"+shiftValue+"')]")
         shiftSelection = driver.find_element(By.XPATH, "//span[@class='mat-option-text'][normalize-space()='"+shiftValue+"']")
-        shiftSelection.click() 
+        # shiftSelection = driver.find_element(By.XPATH, "//*[contains(text(), '"+shiftValue+"')]")
+        shiftSelection.click()
 
         # fetch = driver.find_element(By.XPATH, "//i[normalize-space()='search']")
         # fetch.click()

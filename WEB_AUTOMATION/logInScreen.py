@@ -14,13 +14,13 @@ def fnLogIn(driver):
     user = ''
 
     """--- Live admin - Harshil Admin"""
-    phone_number.send_keys("8141000000")
-    password.send_keys("123")
+    # phone_number.send_keys("8141000000")
+    # password.send_keys("123")
 
     """Live BMC Collection - Sola BMC"""
-    # phone_number.send_keys("8141000001")
-    # password.send_keys("123")
-    # user = 'bmc_collection'
+    phone_number.send_keys("8141000001")
+    password.send_keys("123")
+    user = 'bmc_collection'
 
     password.send_keys(Keys.RETURN)
 

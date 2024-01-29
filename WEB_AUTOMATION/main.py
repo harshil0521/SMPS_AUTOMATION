@@ -23,7 +23,7 @@ driver.get(URL)
 driver.implicitly_wait(10)
 
 fnLogIn(driver)
-# fnMemberCollection(driver)
+fnMemberCollection(driver)
 # fnTruckArrival(driver)
 # fnDockCollection(driver)
 # fnLabCollection(driver)
