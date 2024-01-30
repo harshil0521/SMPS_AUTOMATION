@@ -8,7 +8,6 @@ import time
 
 
 def fnDockCollection(driver):
-    driver.implicitly_wait(10)
     transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
     transaction.click()
 

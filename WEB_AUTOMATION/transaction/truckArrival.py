@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 
@@ -30,3 +32,5 @@ def fnTruckArrival(driver):
 
         route_dropdown = driver.find_element(By.NAME, "route")
         route_dropdown.click()
+        time.sleep(0.5)
+
