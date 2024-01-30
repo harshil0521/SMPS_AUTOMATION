@@ -14,7 +14,7 @@ def get_column_count(file, sheet_name):
     return sheet.max_column
 
 
-def read_data(file, sheet_name, row_num, column_num):
+def readData(file, sheet_name, row_num, column_num):
     workbook = openpyxl.load_workbook(file)
     sheet = workbook[sheet_name]
     return sheet.cell(row_num, column_num).value

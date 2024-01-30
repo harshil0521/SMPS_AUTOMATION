@@ -8,14 +8,10 @@ import time
 
 
 def fnDockCollection(driver):
-    transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
-    transaction.click()
 
-    bmcCollection = driver.find_element(By.XPATH,"//*[contains(text(), 'BMC Collection')]")
-    bmcCollection.click()
-
-    dockCollection = driver.find_element(By.XPATH, "//*[contains(text(), 'Dock Collection')]")
-    dockCollection.click()
+    driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]").click()
+    driver.find_element(By.XPATH,"//*[contains(text(), 'BMC Collection')]").click()
+    driver.find_element(By.XPATH, "//*[contains(text(), 'Dock Collection')]").click()
 
     # my_wait = WebDriverWait(driver, 10, poll_frequency=1)
     # route_dropdown = my_wait.until(EC.presence_of_element_located((By.NAME, "routeSelect")))

@@ -4,7 +4,6 @@ import time
 
 
 def fnMemberCollection(driver):
-
     transaction = driver.find_element(By.XPATH, "//*[contains(text(), 'Transaction')]")
     transaction.click()
 

@@ -5,6 +5,8 @@ from transaction.memberCollection import fnMemberCollection
 from transaction.truckArrival import fnTruckArrival
 from transaction.dockCollection import fnDockCollection
 from transaction.labCollection import fnLabCollection
+from transaction.tankerDispatch import fnTankerDispatch
+from transaction.tankerReceive import fnTankerReceive
 import time
 
 # driver = webdriver.Chrome("C:/Driver/chromedriver.exe")
@@ -26,7 +28,9 @@ fnLogIn(driver)
 # fnMemberCollection(driver)
 # fnTruckArrival(driver)
 # fnDockCollection(driver)
-fnLabCollection(driver)
+# fnLabCollection(driver)
+# fnTankerDispatch(driver)
+fnTankerReceive(driver)
 
 time.sleep(2)
 driver.quit()
