@@ -25,7 +25,7 @@ def fnTankerDispatch(driver):
 
         """passing data to the application"""
         driver.find_element(By.XPATH, "//mat-icon[normalize-space()='add_circle']").click()
-        driver.find_elements(By.NAME, "qty").send_keys(quantity)
+        driver.find_element(By.NAME, "qty").send_keys(quantity)
         driver.find_element(By.NAME, "fat").send_keys(fat)
         driver.find_element(By.NAME, "snf").send_keys(snf)
         driver.find_element(By.NAME, "lr").send_keys(lr)

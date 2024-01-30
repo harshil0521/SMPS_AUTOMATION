@@ -33,14 +33,14 @@ def fnLogIn(driver):
         dock_selection = driver.find_element(By.ID, "mat-option-2")
         dock_selection.click()
 
-        # date_selection = driver.find_element() TODO calender script
+        # date_selection = driver.find_element() #TODO calender script
         # time.sleep(5)
 
         shift = driver.find_element(By.NAME, "shift")
         shift.click()
 
-        selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Morning')]")
-    #   selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Evening')]")
+        # selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Morning')]")
+        selected_shift = driver.find_element(By.XPATH, "//*[contains(text(), 'Evening')]")
         selected_shift.click()
 
         submit = driver.find_element(By.XPATH, "//*[contains(text(), 'Submit')]")
