@@ -11,20 +11,15 @@ def fnLogIn(driver):
     password = driver.find_element(By.NAME, "password")
     password.clear()
 
-    user = ''
+    # user = 'bmcCollectionUser'
+    user = 'admin'
 
-    """--- Live admin - Harshil Admin"""
-    # phone_number.send_keys("8141000000")
-    # password.send_keys("123")
+    if user == 'bmcCollectionUser':
 
-    """Live BMC Collection - Sola BMC"""
-    phone_number.send_keys("8141000001")
-    password.send_keys("123")
-    user = 'bmc_collection'
-
-    password.send_keys(Keys.RETURN)
-
-    if user == 'bmc_collection':
+        """Live BMC Collection - Sola BMC"""
+        phone_number.send_keys("8141000001")
+        password.send_keys("123")
+        password.send_keys(Keys.RETURN)
 
         """Dock & Shift selection"""
         dock_dropdown = driver.find_element(By.NAME, "dock")
@@ -46,3 +41,10 @@ def fnLogIn(driver):
         submit = driver.find_element(By.XPATH, "//*[contains(text(), 'Submit')]")
         submit.click()
         time.sleep(1)
+
+    else:
+
+        """--- Live admin - Harshil Admin"""
+        phone_number.send_keys("8141000000")
+        password.send_keys("123")
+        password.send_keys(Keys.RETURN)

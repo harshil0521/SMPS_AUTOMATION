@@ -22,6 +22,7 @@ def fnMemberCollection(driver):
 
         driver.refresh()
         driver.implicitly_wait(10)
+
         """Reading data"""
         routeValue = XLUtility.readData(file, "data", r, 1)
         mppValue = XLUtility.readData(file, "data", r, 2)
@@ -37,6 +38,7 @@ def fnMemberCollection(driver):
         fatValue = XLUtility.readData(file, "data", r, 8)
         snfValue = XLUtility.readData(file, "data", r, 9)
 
+        """Passing Data"""
         routeDropdown = driver.find_element(By.NAME, "Route")
         routeDropdown.click()
 

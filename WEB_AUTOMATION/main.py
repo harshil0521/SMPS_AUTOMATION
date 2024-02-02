@@ -7,6 +7,7 @@ from transaction.dockCollection import fnDockCollection
 from transaction.labCollection import fnLabCollection
 from transaction.tankerDispatch import fnTankerDispatch
 from transaction.tankerReceive import fnTankerReceive
+from master.memberMaster import fnMemberMaster
 import time
 
 # driver = webdriver.Chrome("C:/Driver/chromedriver.exe")
@@ -25,12 +26,14 @@ driver.get(URL)
 driver.implicitly_wait(10)
 
 fnLogIn(driver)
-fnMemberCollection(driver)
+
+# fnMemberCollection(driver)
 # fnTruckArrival(driver)
 # fnDockCollection(driver)
 # fnLabCollection(driver)
 # fnTankerDispatch(driver)
 # fnTankerReceive(driver)
+fnMemberMaster(driver)
 
 time.sleep(2)
 driver.quit()
