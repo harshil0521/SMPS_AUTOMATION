@@ -9,14 +9,12 @@ def fnMemberMaster(driver):
     driver.find_element(By.XPATH, "//*[contains(text(), 'Master')]").click()
     driver.find_element(By.XPATH, "//*[contains(text(), 'Collection Points')]").click()
     driver.find_element(By.XPATH, "//*[contains(text(), 'Member')]").click()
-    driver.find_element(By.XPATH, "//*[contains(text(), 'add_circle')]").click()
 
     file = "C:/Samudra Project/AUTOMATION/SMPS_AUTOMATION/WEB_AUTOMATION/dataSheet/memberMaster.xlsx"
     rows = XLUtility.getRowCount(file, "data")
-    print(rows)
+    # print(rows)
 
     for r in range(2, rows+1):
-
         """Reading Data"""
         plant = XLUtility.readData(file, "data", r, 1)
         mcc = XLUtility.readData(file, "data", r, 2)
@@ -41,6 +39,8 @@ def fnMemberMaster(driver):
         approvalDate = effectiveDate
 
         """Passing Data"""
+        driver.find_element(By.XPATH, "//*[contains(text(), 'add_circle')]").click()
+
         driver.find_element(By.XPATH, "//*[@placeholder='Plant ']").click()
         driver.find_element(By.XPATH, "//*[contains(text(), '"+plant+"')]").click()
 
@@ -73,5 +73,7 @@ def fnMemberMaster(driver):
         driver.find_element(By.XPATH, "//*[@data-placeholder='Approval Date']").send_keys(approvalDate)
         driver.find_element(By.XPATH, "//*[@formcontrolname='isActive']").click()
         driver.find_element(By.XPATH, "//span[normalize-space()='Add']").click()
+        time.sleep(1)
+    print("Total", rows-1, "Member Added.")
     time.sleep(2)
     driver.close()

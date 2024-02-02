@@ -18,9 +18,9 @@ driver = webdriver.Chrome(service=serv)
 driver.maximize_window()
 
 # URL = 'https://uat.smartmps.in/#/login'
-URL = 'http://dev.rmrd.in/#/login'
+# URL = 'http://dev.rmrd.in/#/login'
 # URL = 'http://localhost:4200/#/login'
-# URL = 'http://proc.smartmps.in/#/login'
+URL = 'http://proc.smartmps.in/#/login'
 
 driver.get(URL)
 driver.implicitly_wait(10)
