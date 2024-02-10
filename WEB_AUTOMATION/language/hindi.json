@@ -164,7 +164,7 @@
     "localSaleScreen": {
         "lblLocalSale": "स्थानीय बिक्री",
         "lblCode": "कोड",
-        "lblLedgerName": "सदस्य नाम",
+        "lblLedgerName": "खाताबही नाम",
         "lblCreditLimit": "क्रेडिट सीमा",
         "lblQty": "मात्रा",
         "lblRate": "भाव",
@@ -194,7 +194,7 @@
     },
     "addVocherScreen": {
         "lblVoucher": "वाउचर",
-        "lblLedgerName": "सदस्य",
+        "lblLedgerName": "खाताबही नाम",
         "lblDate": "तारीख",
         "lblVoucherAmount": "वाउचर राशि",
         "lblType": "प्रकार",
@@ -206,8 +206,8 @@
         "lblSave": "सेव"
     },
     "localsaleLedgerScreen": {
-        "lblLedgerMaster": "सदस्य मास्टर",
-        "lblLedger": "सदस्य ",
+        "lblLedgerMaster": "खाताबही मास्टर",
+        "lblLedger": "खाताबही",
         "lblCreditLimit": "क्रेडिट सीमा",
         "lblCreatedDate": "क्रेडिट तारीख",
         "lblName": "नाम",
@@ -217,14 +217,14 @@
     "localSaleMenuScreen": {
         "lblLocalMilkSale": "स्थानीय दूध बिक्री",
         "lblLocalSale": "स्थानीय बिक्री",
-        "lblLedger": "खाता बही",
+        "lblLedger": "खाताबही",
         "lblVoucher": "वाउचर ",
         "lblLocalSaleReport": "स्थानीय बिक्री रिपोर्ट",
         "lblLocalSaleLedgerReport": "स्थानीय बिक्री खाताबही रिपोर्ट"
     },
     "vocherMasterScreen": {
         "lblLocalSaleVoucher": "स्थानीय बिक्री वाउचर",
-        "lblLedger": "खाता बही",
+        "lblLedger": "खाताबही",
         "lblDate": "तारीख",
         "lblAmount": "राशि",
         "lblCRDR": "क्रेडिट/डेबिट",
@@ -375,7 +375,7 @@
         "btnSave": "सेव",
         "lblAutoQuantity": "स्वत: मात्रा",
         "lblAutoQuality": "स्वत: गुणवत्ता",
-        "lblDispatchAutoQuantity": "स्वत: मात्रा भेजना",
+        "lblDispatchAutoQuantity": "स्वत: मात्रा डिस्पैच",
         "lblDispatchAutoQuality": "स्वत: गुणवत्ता डिस्पैच",
         "lblAutoTare": "स्वत: जीरो",
         "lblEnablePrintSlip": "प्रिंट पर्ची सक्षम करें",
@@ -449,7 +449,7 @@
         "lblLocalMilkSaleQty": "स्थानीय दूध बिक्री मात्रा",
         "lblLocalSaleMilkAmount": "स्थानीय बिक्री दूध राशि",
         "lblPerLocalMilkSaleQty": "प्रति स्थानीय दूध बिक्री मात्रा",
-        "lblUnionDispatchMilkQty": "यूनियन डिस्पैच दूध मात्रा",
+        "lblUnionDispatchMilkQty": "संघ डिस्पैच दूध मात्रा",
         "lblGoodMilkQty": "अच्छा दूधमात्रा",
         "lblSourMilkQty": "खट्टा दूधमात्रा",
         "lblCurdMilkQty": "दही दूधमात्रा",
@@ -527,9 +527,9 @@
         "lblToDate": "अब तक की तारीख",
         "lblCancel": "रद्द करना",
         "lblApply": "लागू करें",
-        "lblKGFATKGSNFSummary": "KgFAT/KgSNF सारांश",
-        "lblKGFAT": "KgFAT",
-        "lblKGSNF": "KgSNF",
+        "lblKGFATKGSNFSummary": "किग्रा FAT/किग्रा SNF सारांश",
+        "lblKGFAT": "किग्रा FAT",
+        "lblKGSNF": "किग्रा SNF",
         "lblQuantity": "मात्रा",
         "lblPayment": "पेमेंट "
     },
@@ -539,7 +539,7 @@
         "lblCancel": "रद्द करना",
         "lblApply": "लागू करें",
         "lblName": "नाम",
-        "lblLocalSaleLedger": "स्थानीय बिक्री खाता",
+        "lblLocalSaleLedger": "स्थानीय बिक्री खाताबही",
         "lblDate": "तारीख",
         "lblType": "प्रकार",
         "lblLNO": "L_NO",
@@ -571,7 +571,7 @@
         "lblCancel": "रद्द करना",
         "lblApply": "लागू करें",
         "lblMemberName": "सदस्य नाम",
-        "lblMemberLedger": "सदस्य खाता",
+        "lblMemberLedger": "सदस्य खाताबही",
         "lblFAT": "FAT",
         "lblSNF": "SNF",
         "lblLR": "CLR",
@@ -593,9 +593,9 @@
     "reportScreen": {
         "lblReport": "रिपोर्ट",
         "lblShiftReport": "पारी रिपोर्ट",
-        "lblMemberLedger": "सदस्य खाता",
+        "lblMemberLedger": "सदस्य खाताबही",
         "lblCollectionSummary": "कलेक्शन सारांश",
-        "lblKgFatKgSNFSummary": "किग्राFAT/किग्राSNF सारांश",
+        "lblKgFatKgSNFSummary": "किग्रा FAT/किग्रा SNF सारांश",
         "lblPaymentRegister": "पेमेंट रजिस्टर",
         "lblPaymentRegisterwithDeduction": "कटौती के साथ पेमेंट रजिस्टर",
         "lblDispatchReport": "डिस्पैच रिपोर्ट",
@@ -673,7 +673,7 @@
         "lblMix": "मिश्रित"
     },
     "unionSlipEntryScreen": {
-        "lblUnionSlip": "यूनियन स्लिप एंट्री",
+        "lblUnionSlip": "संघ पर्ची एंट्री",
         "lblFromDate": "प्रथम की तिथि",
         "lblToDate": "अब तक की तारीख",
         "lblCancel": "रद्द करना",
@@ -739,13 +739,13 @@
         "lblMillkBillDeduction": "दूध बिल कपात अहवाल",
         "lblFromDate": "प्रथम की तिथि",
         "lblToDate": "अब तक की तारीख",
-        "lblMemberName": "मेम्बर नाम",
+        "lblMemberName": "सदस्य नाम",
         "lblCancel": "रद्द करना",
         "lblApply": "लागू करें",
-        "lblFAT": "फ़ैट्‌",
-        "lblSNF": "एस एन एफ",
-        "lblLR": "एलआर",
-        "lblKGFAT": "किग्रा फेट ",
-        "lblKGSNF": "केजी एसएनएफ"
+        "lblFAT": "FAT",
+        "lblSNF": "SNF",
+        "lblLR": "CLR",
+        "lblKGFAT": "किग्रा FAT",
+        "lblKGSNF": "किग्रा SNF"
     }
 }
