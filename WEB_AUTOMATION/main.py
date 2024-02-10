@@ -8,6 +8,7 @@ from transaction.labCollection import fnLabCollection
 from transaction.tankerDispatch import fnTankerDispatch
 from transaction.tankerReceive import fnTankerReceive
 from master.memberMaster import fnMemberMaster
+from master.mppMaster import fnMPPMaster
 import time
 
 # driver = webdriver.Chrome("C:/Driver/chromedriver.exe")
@@ -33,7 +34,8 @@ fnLogIn(driver)
 # fnLabCollection(driver)
 # fnTankerDispatch(driver)
 # fnTankerReceive(driver)
-fnMemberMaster(driver)
+# fnMemberMaster(driver)
+fnMPPMaster(driver)
 
 time.sleep(2)
 driver.quit()
