@@ -41,18 +41,18 @@
         "resendOtp": "OTP ફરીથી બદલો"
     },
     "sync": {
-        "lblMemberMaster": "મેમ્બર માસ્ટર",
+        "lblMemberMaster": "સભ્ય માસ્ટર",
         "lblMachineMaster": "મશીન માસ્ટર",
         "lblSettingMaster": "સેટિંગ માસ્ટર",
         "lblRateMaster": "ભાવ માસ્ટર",
-        "lblMemberCollectionUpload": "મેમ્બર કલેક્શન અપલોડ",
+        "lblMemberCollectionUpload": "સભ્ય કલેક્શન અપલોડ",
         "lblDispatchCollectionUpload": "રવાનગી કલેક્શન અપલોડ",
         "btnontinue": "સાચવો"
     },
     "dashboard": {
         "lblDashboard": "ડેશબોર્ડ",
-        "lblTotalmember": "કુલ મેમ્બર",
-        "lblPouringmember": "દૂધ ભરતા મેમ્બરો",
+        "lblTotalmember": "કુલ સભ્ય",
+        "lblPouringmember": "દૂધ ભરાવતા સભ્યો",
         "lblTotalQty": "કુલ જથ્થો",
         "lblNoofsample": "નમૂનાની સંખ્યા",
         "lblFAT": "FAT",
@@ -68,8 +68,8 @@
         "lblDispatch": "રવાનગી",
         "lblReport": "અહેવાલ",
         "lblLocalSale": "સ્થાનિક વેચાણ",
-        "lblProductSale": "Product વેચાણ",
-        "lblMember": "મેમ્બર",
+        "lblProductSale": "ઉત્પાદ વેચાણ",
+        "lblMember": "સભ્ય",
         "lblRate": "ભાવ",
         "lblSync": "સિન્ક",
         "lblFarmerDeduction": "ખેડૂત કપાત",
@@ -84,7 +84,7 @@
     "collectionScreen": {
         "headerCollection": "કલેક્શન",
         "lblCode": "કોડ",
-        "lblMembername": "મેમ્બર નામ",
+        "lblMembername": "સભ્ય નામ",
         "lblCow": "ગાય",
         "lblBuffalo": "ભેંસ",
         "lblMix": "મિશ્રિત",
@@ -130,7 +130,7 @@
     "farmerdeductionScreen": {
         "lblEarningDeduction": "કપાત કમાણી",
         "lblCode": "કોડ",
-        "lblMemberName": "મેમ્બર નામ",
+        "lblMemberName": "સભ્ય નામ",
         "lblEDHead": "કપાત કમાણી મૂળ",
         "lblQty": "માત્રા",
         "btnAdd": "સાચવો",
@@ -140,7 +140,7 @@
         "lblClear": "દૂર કરવું",
         "lblSave": "સાચવો",
         "lblFarmerDeduction": "ખેડૂત કપાત",
-        "lblMember": "મેમ્બર",
+        "lblMember": "સભ્ય",
         "lblQuantity": "માત્રા"
     },
     "exportCollectionScreen": {
@@ -164,7 +164,7 @@
     "localSaleScreen": {
         "lblLocalSale": "સ્થાનિક વેચાણ",
         "lblCode": "કોડ",
-        "lblLedgerName": "મેમ્બર નામ",
+        "lblLedgerName": "ખાતાવહીનું નામ",
         "lblCreditLimit": "ધિરાણ મર્યાદા",
         "lblQty": "માત્રા",
         "lblRate": "ભાવ",
@@ -194,7 +194,7 @@
     },
     "addVocherScreen": {
         "lblVoucher": "વાઉચર",
-        "lblLedgerName": "મેમ્બર",
+        "lblLedgerName": "ખાતાવહીનું નામ",
         "lblDate": "તારીખ",
         "lblVoucherAmount": "વાઉચર રકમ",
         "lblType": "પ્રકાર",
@@ -206,8 +206,8 @@
         "lblSave": "સાચવો"
     },
     "localsaleLedgerScreen": {
-        "lblLedgerMaster": "મેમ્બર માસ્ટર",
-        "lblLedger": "મેમ્બર",
+        "lblLedgerMaster": "ખાતાવહી માસ્ટર",
+        "lblLedger": "ખાતાવહી",
         "lblCreditLimit": "ધિરાણ મર્યાદા",
         "lblCreatedDate": "ધિરાણ તારીખ",
         "lblName": "નામ",
@@ -239,12 +239,12 @@
         "lblMasters": "માસ્ટર",
         "lblBMCMaster": "BMC માસ્ટર",
         "lblMPPMaster": "MPP માસ્ટર",
-        "lblMemberMaster": "મેમ્બર માસ્ટર"  
+        "lblMemberMaster": "સભ્ય માસ્ટર"  
     },
     "memberFormScreen": {
-        "lblMemberForm": " મેમ્બર ફોર્મ",
+        "lblMemberForm": " સભ્ય ફોર્મ",
         "lblUpdate": "અપડેટ",
-        "lblFarmerCode": "મેમ્બર કોડ",
+        "lblFarmerCode": "સભ્ય કોડ",
         "lblOtherCode": "અન્ય કોડ",
         "lblFirstName": "નામ",
         "lblMiddleName": "પિતાનું નામ",
@@ -284,7 +284,7 @@
         "lblST": "અનુસૂચિત જનજાતિ"
     },
     "memberMasterScreen": {
-        "lblMemberMaster": "મેમ્બર માસ્ટર",
+        "lblMemberMaster": "સભ્ય માસ્ટર",
         "lblPhoneNo": "મોબાઇલ નંબર"
     },
     "mppMasterScreen": {
@@ -292,8 +292,8 @@
         "lblMPPCode": "MPP કોડ",
         "lblMPPName": "MPP નામ",
         "lblBMCName": "BMC નામ",
-        "lblSahayakName": "મેમ્બર નામ",
-        "lblSahayakMobileNo": "મેમ્બર મોબાઇલ નંબર"
+        "lblSahayakName": "સહાયક નામ",
+        "lblSahayakMobileNo": "સહાયક મોબાઇલ નંબર"
     },
     "uploadDownloadScreen": {
         "lblSyncData": "માહિતી સમન્વયિત કરો",
@@ -711,7 +711,7 @@
         "btnsubmit": "સાચવો",
         "lblCancel": "રદ કરવું",
         "lblOrderId": "ઓર્ડર ID",
-        "lblMemberName": "સભ્ય",
+        "lblMemberName": "સભ્યનું નામ",
         "lblOrderDate": "Order Date",
         "lblNetAmount": "ચોખ્ખી રકમ",
         "lblProductSaleDetail": "ઉત્પાદ વેચાણ વિગત",
@@ -734,5 +734,18 @@
         "btnSave": "સાચવો",
         "lblSendSMS": "SMS મોકલો",
         "lblSmsType": "SMS પ્રકાર"
-    }
+    },
+    "reportMillkBillDeductionScreen":{
+        "lblMillkBillDeduction":"દૂધ બિલ કપાત અહેવાલ",      
+        "lblFromDate": "તારીખ થી",
+        "lblToDate": "આજ સુધી",
+        "lblMemberName":"સભ્યનું નામ",
+        "lblCancel": "રદ કરો",
+        "lblApply": "અરજી કરો",
+        "lblFAT": "FAT",
+        "lblSNF": "SNF",
+        "lblLR": "CLR",
+        "lblKGFAT":"કિગ્રા FAT",
+        "lblKGSNF":"કિગ્રા SNF"
+    }    
 }
