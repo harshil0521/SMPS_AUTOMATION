@@ -77,7 +77,7 @@ for x in range(1):
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     time.sleep(0.5)
     driver.find_element(By.XPATH, "//button[normalize-space()='Submit']").click()
-    print(x + 1, 'Theme number-', themeNumber, 'Activity Number-', activityNumber)
+    print(x + 1, 'Theme number:', themeNumber, 'Activity Number:', activityNumber)
     driver.refresh()
 
 driver.quit()
