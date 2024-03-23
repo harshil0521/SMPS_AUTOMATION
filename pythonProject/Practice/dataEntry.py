@@ -64,14 +64,14 @@ for x in range(1):
     activity.select_by_value(str(activityNumber))
 
     """Select Date"""
-    driver.find_element(By.NAME, "SelectDateFrom").send_keys('2024-03-21')
-    driver.find_element(By.NAME, "SelectDateTo").send_keys('2024-03-21')
+    driver.find_element(By.NAME, "SelectDateFrom").send_keys('2024-03-23')
+    driver.find_element(By.NAME, "SelectDateTo").send_keys('2024-03-23')
 
     """Count of People"""
-    driver.find_element(By.NAME, "CountAdultMale").send_keys("15")
-    driver.find_element(By.NAME, "CountAdultFemale").send_keys("15")
-    driver.find_element(By.NAME, "CountChildMale").send_keys("15")
-    driver.find_element(By.NAME, "CountChildFemale").send_keys("15")
+    driver.find_element(By.NAME, "CountAdultMale").send_keys(str(random.randint(12, 20)))
+    driver.find_element(By.NAME, "CountAdultFemale").send_keys(str(random.randint(12, 20)))
+    driver.find_element(By.NAME, "CountChildMale").send_keys(str(random.randint(12, 20)))
+    driver.find_element(By.NAME, "CountChildFemale").send_keys(str(random.randint(12, 20)))
 
     """Saving Data"""
     driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
@@ -80,4 +80,4 @@ for x in range(1):
     print(x + 1, 'Theme number:', themeNumber, 'Activity Number:', activityNumber)
     driver.refresh()
 
-driver.quit()
+# driver.quit()
